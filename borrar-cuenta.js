@@ -120,7 +120,7 @@
       // La cuenta ya no existe: la sesión deja de valer.
       await client.auth.signOut({ scope: 'local' });
       confirmar.hidden = true;
-      avisar('Tu cuenta se ha borrado. Gracias por haber usado CuidApp.', 'ok');
+      avisar('Tu cuenta se ha borrado. Gracias por haber usado Tutelia.', 'ok');
     });
   });
 })();
