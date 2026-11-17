@@ -59,6 +59,7 @@
     <nav aria-label="Principal">
       <a href="#funciones">Funciones</a>
       <a href="#precio">Precio</a>
+      <a href="articulos/">Consejos</a>
       <a class="boton pequeno secundario" href="#acceso">Acceso web</a>
     </nav>
   </header>
@@ -168,6 +169,36 @@
       </div>
     </section>
 
+    <section aria-labelledby="titulo-consejos">
+      <h2 id="titulo-consejos">Consejos para cuidar</h2>
+      <div class="rejilla">
+        <a class="tarjeta enlace" href="articulos/turnos-cuidar-familiar.html"><h3>Cómo organizar los turnos para cuidar a un familiar entre varias personas</h3><p class="muted">Repartir sin que nadie cargue con todo.</p></a>
+        <a class="tarjeta enlace" href="articulos/salir-del-hospital.html"><h3>Al salir del hospital: qué preparar los primeros días</h3><p class="muted">Una lista para que la vuelta a casa sea más tranquila.</p></a>
+        <a class="tarjeta enlace" href="articulos/medicacion-sin-despistes.html"><h3>Cómo llevar la medicación de otra persona sin despistes</h3><p class="muted">Horarios, cajas y quién la ha dado.</p></a>
+        <a class="tarjeta enlace" href="articulos/cuidar-sin-quemarse.html"><h3>Cuidar sin quemarse: señales de que necesitas un respiro</h3><p class="muted">Cuidar de ti también es cuidar.</p></a>
+      </div>
+      <p><a href="articulos/">Ver todos los consejos</a></p>
+    </section>
+
+    <section id="buzon" aria-labelledby="titulo-buzon">
+      <h2 id="titulo-buzon">¿Qué esperarías encontrar en una app de cuidados?</h2>
+      <p>Estamos construyendo Tutelia con las personas que cuidan. Cuéntanos qué te ayudaría en tu día a día, qué echas en falta o qué te sobra. Lo leemos todo.</p>
+      <form id="form-buzon" class="tarjeta" novalidate>
+        <label for="buzon-mensaje">Tu mensaje</label>
+        <textarea id="buzon-mensaje" name="message" rows="6" maxlength="2000" required></textarea>
+        <label for="buzon-correo">Tu correo <span class="muted">(opcional, si quieres que te contestemos)</span></label>
+        <input id="buzon-correo" name="email" type="email" autocomplete="email" maxlength="254">
+        <div class="trampa" aria-hidden="true">
+          <label for="buzon-web">No rellenes este campo</label>
+          <input id="buzon-web" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div id="buzon-robot" class="robot"></div>
+        <button type="submit">Enviar</button>
+        <p class="muted pequeno">Por favor, no incluyas datos de salud ni de otras personas. Solo usamos tu mensaje y tu correo para leerlo y contestarte. Más información en la <a href="privacidad.html#buzon">política de privacidad</a>.</p>
+        <div id="buzon-estado" role="alert" hidden></div>
+      </form>
+    </section>
+
     <section aria-labelledby="preguntas">
       <h2 id="preguntas">Preguntas frecuentes</h2>
       <details><summary>¿Para quién es Tutelia?</summary><p>Para cualquier grupo de personas que se reparte el cuidado de alguien: hijos e hijas que cuidan de sus padres o de los abuelos, familias con un niño con una enfermedad, amistades que acompañan a un enfermo, y los profesionales que vienen a casa.</p></details>
@@ -179,7 +210,9 @@
 
   <footer class="pie">
     <p><strong>Tutelia</strong> · Cuidar juntos, día a día. Una app de JUNOSoft, S.L.</p>
-    <p><a href="mailto:hola@tutelia.app">hola@tutelia.app</a> · <a href="privacidad.html">Política de privacidad</a> · <a href="borrar-cuenta.html">Borrar tu cuenta y tus datos</a></p>
+    <p><a href="mailto:hola@tutelia.app">hola@tutelia.app</a> · <a href="articulos/">Consejos para cuidar</a> · <a href="privacidad.html">Política de privacidad</a> · <a href="borrar-cuenta.html">Borrar tu cuenta y tus datos</a></p>
   </footer>
+  <script src="config.js"></script>
+  <script src="buzon.js"></script>
 </body>
 </html>
