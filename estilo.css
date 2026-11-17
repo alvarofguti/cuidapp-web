@@ -64,3 +64,43 @@ button:disabled { opacity: 0.6; cursor: wait; }
 .mensaje.ok { border-color: var(--success); color: var(--success); }
 [hidden] { display: none !important; }
 footer { margin-top: 3rem; font-size: 1rem; }
+
+/* Página de presentación (index.html) */
+:root { --accent-soft: #f2e0ea; --surface-muted: #f1ece5; }
+@media (prefers-color-scheme: dark) { :root { --accent-soft: #3a2433; --surface-muted: #262b30; } }
+.cabecera { max-width: 64rem; margin: 0 auto; padding: 1rem; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; }
+.cabecera .marca { display: flex; align-items: center; gap: 0.6rem; color: var(--primary); font-weight: 700; font-size: 1.5rem; text-decoration: none; }
+.cabecera .marca img { border-radius: 0.6rem; }
+.cabecera nav { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+.cabecera nav a:not(.boton) { font-weight: 600; text-decoration: none; min-height: 3rem; display: inline-flex; align-items: center; }
+body:has(.portada) main { max-width: 64rem; }
+section { margin: 3rem 0; }
+.portada { text-align: center; margin-top: 1.5rem; }
+.portada h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0.5rem auto 1rem; max-width: 22ch; }
+.lema { color: var(--accent); font-weight: 700; margin: 0; }
+.entrada { font-size: 1.2rem; max-width: 46rem; margin: 0 auto; }
+.acciones { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 2rem 0 1.5rem; }
+.boton {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 3.5rem; padding: 0.75rem 1.75rem;
+  border-radius: 1rem; border: 2px solid var(--primary); background: var(--primary); color: var(--on-primary);
+  font-weight: 700; text-decoration: none;
+}
+.boton.secundario { background: transparent; color: var(--primary); }
+.boton.pequeno { min-height: 3rem; padding: 0.5rem 1.25rem; }
+.boton.desactivado { background: var(--surface-muted); border-color: var(--border-strong); color: var(--text-muted); cursor: default; }
+.rejilla { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.rejilla .tarjeta { margin: 0; }
+.tarjeta h3 { margin: 0.25rem 0 0.5rem; font-size: 1.2rem; }
+.tarjeta p { margin: 0.25rem 0; }
+.icono { font-size: 2rem; margin: 0; }
+.lista-check { list-style: none; padding: 0; }
+.lista-check li { padding-left: 2rem; position: relative; margin: 0.5rem 0; }
+.lista-check li::before { content: "✓"; position: absolute; left: 0.25rem; color: var(--primary); font-weight: 700; }
+.plan .precio { font-size: 2.25rem; font-weight: 700; margin: 0.25rem 0; }
+.plan .precio span { font-size: 1.1rem; font-weight: 400; color: var(--text-muted); }
+.plan.destacado { border-color: var(--accent); background: var(--accent-soft); }
+.pasos { font-size: 1.2rem; }
+.pasos li { margin: 0.75rem 0; }
+details { background: var(--surface); border: 2px solid var(--border-strong); border-radius: 1rem; padding: 1rem 1.25rem; margin: 0.75rem 0; }
+summary { font-weight: 700; cursor: pointer; min-height: 2rem; }
+.pie { max-width: 64rem; margin: 0 auto; padding: 2rem 1rem 3rem; border-top: 1px solid var(--border-strong); color: var(--text-muted); text-align: center; }
