@@ -111,7 +111,8 @@ textarea {
 .robot { margin-top: 1rem; min-height: 65px; }
 .pequeno { font-size: 1rem; }
 a.tarjeta.enlace { display: block; color: var(--text); text-decoration: none; }
-a.tarjeta.enlace h3 { color: var(--primary); text-decoration: underline; }
+a.tarjeta.enlace h2, a.tarjeta.enlace h3 { color: var(--primary); text-decoration: underline; }
+a.tarjeta.enlace h2 { margin: 0.25rem 0 0.5rem; font-size: 1.2rem; }
 a.tarjeta.enlace:hover { border-color: var(--primary); }
 
 /* Artículos */
