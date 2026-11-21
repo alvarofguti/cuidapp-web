@@ -44,11 +44,11 @@
           { "@type": "Question", "name": "¿Tutelia es gratis?",
             "acceptedAnswer": { "@type": "Answer", "text": "Sí. Lo básico para organizar los cuidados del día a día es gratis: turnos, medicación, citas médicas, diario, contactos, avisos, alertas y lectura en voz alta. El premium (4,99 € al mes o 44,99 € al año por círculo, con 30 días de prueba) añade el resto de la salud (lo que dijo el médico, ingresos, documentos), gastos, chat, fotos, botón del pánico y más. Lo paga una persona y lo tiene todo el círculo." } },
           { "@type": "Question", "name": "¿Mis datos de salud están seguros?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Los datos se guardan en servidores de la Unión Europea, cada persona solo ve lo que su papel permite, lo médico se abre con la huella y queda registrado quién lo consulta. Puedes descargar o borrar tus datos cuando quieras." } },
+            "acceptedAnswer": { "@type": "Answer", "text": "Los datos se guardan en servidores de la Unión Europea, cada persona solo ve lo que su papel permite, lo médico se abre con la huella (en el ordenador, con la contraseña) y queda registrado quién lo consulta. Puedes descargar o borrar tus datos cuando quieras." } },
           { "@type": "Question", "name": "¿Hace falta que la persona cuidada use el móvil?",
             "acceptedAnswer": { "@type": "Answer", "text": "No. Si quiere y puede, tiene una pantalla muy sencilla con sus tomas, un «¿Cómo estás hoy?» y un botón para pedir ayuda. Si no, el círculo se organiza igual." } },
           { "@type": "Question", "name": "¿En qué idiomas está Tutelia?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Está en castellano, català, valencià, galego, euskara e inglés. Cada persona elige su idioma en el Perfil, y la app, los avisos del móvil y los correos le llegan en ese idioma. Lo que escribe cada persona no se traduce." } }
+            "acceptedAnswer": { "@type": "Answer", "text": "Está en castellano, català, valencià, galego, euskara, English, français, Deutsch, română, português e italiano. Cada persona elige su idioma en el Perfil, y la app, los avisos del móvil y los correos le llegan en ese idioma. Lo que escribe cada persona no se traduce." } }
         ]
       }
     ]
@@ -99,6 +99,8 @@
         <div class="tarjeta"><h3>🆘 Botón de ayuda</h3><p>La persona cuidada pide ayuda desde su móvil y el aviso llega a quien puede ir, con su ubicación.</p></div>
         <div class="tarjeta"><h3>📄 Papeles y caducidades</h3><p>DNI, tarjeta sanitaria, seguro o dependencia, con aviso antes de que caduquen.</p></div>
         <div class="tarjeta"><h3>🔔 Avisos útiles</h3><p>Tomas olvidadas, turnos sin cubrir, citas de mañana, un resumen cada domingo y tus propias alertas: qué, para quién y cuándo.</p></div>
+        <div class="tarjeta"><h3>🗓️ Disponibilidad y ausencias</h3><p>Quien cuida apunta cuándo puede ir y sus vacaciones. Al repartir turnos se ve quién está libre, y la app avisa a quien puede cubrir un hueco.</p></div>
+        <div class="tarjeta"><h3>📱 En la pantalla del móvil</h3><p>Un widget con tus turnos y las tomas de hoy sin abrir la app, y otro, «Tutelia SOS», para pedir ayuda con un toque (Android).</p></div>
         <div class="tarjeta"><h3>🧡 Y tú, ¿cómo estás?</h3><p>Cuidar cansa. Tutelia también pregunta a quien cuida y le orienta a recursos de apoyo.</p></div>
       </div>
     </section>
@@ -120,17 +122,19 @@
     <section aria-labelledby="seguridad">
       <h2 id="seguridad">Segura, accesible y en tu idioma</h2>
       <div class="rejilla">
-        <div class="tarjeta"><h3>🔒 Privacidad por diseño</h3><p>Servidores en la Unión Europea. Cada persona ve solo lo suyo y la información médica se abre con la huella, dejando registro de quién lo consulta.</p></div>
-        <div class="tarjeta"><h3>♿ Fácil para todos</h3><p>Letra grande y clara, buen contraste y preparada para el lector de pantalla (TalkBack y VoiceOver). Lee en voz alta el prospecto, los mensajes y otros textos, gratis y en tu idioma. Hecha para cualquier edad y pensada también para personas con discapacidad visual.</p></div>
-        <div class="tarjeta"><h3>🌍 En tu idioma</h3><p>En castellano, català, valencià, galego, euskara e inglés. Cada persona del círculo elige el suyo, y la app, los avisos y los correos le llegan en ese idioma.</p></div>
+        <div class="tarjeta"><h3>🔒 Privacidad por diseño</h3><p>Servidores en la Unión Europea. Cada persona ve solo lo suyo y la información médica se abre con la huella (en el ordenador, con la contraseña), dejando registro de quién lo consulta.</p></div>
+        <div class="tarjeta"><h3>♿ Fácil para todos</h3><p>Letra grande y clara, modo de más contraste y texto en negrita, y preparada para el lector de pantalla (TalkBack y VoiceOver) y la línea braille. Hecha para cualquier edad y pensada también para personas con discapacidad visual.</p></div>
+        <div class="tarjeta"><h3>🌍 En tu idioma</h3><p>En castellano, català, valencià, galego, euskara, English, français, Deutsch, română, português e italiano. Cada persona del círculo elige el suyo, y la app, los avisos y los correos le llegan en ese idioma.</p></div>
       </div>
     </section>
 
-    <section aria-labelledby="titulo-pronto">
-      <h2 id="titulo-pronto">Muy pronto</h2>
-      <p>En lo que estamos trabajando ahora:</p>
+    <section aria-labelledby="titulo-voz">
+      <h2 id="titulo-voz">Para quien no ve bien</h2>
+      <p>Funciones gratis que se usan sin conexión y con la voz del propio móvil:</p>
       <div class="rejilla">
-        <div class="tarjeta"><h3>💊 ¿Qué medicamento tengo en la mano?</h3><p>Enfocas la caja con la cámara y la app te dice en voz alta cuál es y si te toca tomarlo. Pensado para personas con discapacidad visual.</p></div>
+        <div class="tarjeta"><h3>💊 ¿Qué medicamento tengo en la mano?</h3><p>Enfocas la caja con la cámara y la app te dice en voz alta cuál es y si te toca tomarlo. La foto se borra al momento.</p></div>
+        <div class="tarjeta"><h3>📄 Leer un papel en voz alta</h3><p>Una carta, una receta o un informe: le haces una foto y la app te lo lee.</p></div>
+        <div class="tarjeta"><h3>🔊 Escuchar mi día</h3><p>Un botón que te cuenta lo que toca hoy: tomas, alertas y citas. También se escuchan el prospecto, los mensajes y la ayuda.</p></div>
       </div>
     </section>
 
@@ -221,9 +225,9 @@
       <h2 id="preguntas">Preguntas frecuentes</h2>
       <details><summary>¿Para quién es Tutelia?</summary><p>Para cualquier grupo de personas que se reparte el cuidado de alguien: hijos e hijas que cuidan de sus padres o de los abuelos, familias con un niño con una enfermedad, amistades que acompañan a un enfermo, y los profesionales que vienen a casa.</p></details>
       <details><summary>¿Tutelia es gratis?</summary><p>Sí. Lo básico para organizar el día a día es gratis. El premium cuesta 4,99 € al mes o 44,99 € al año por círculo, con 30 días de prueba: lo paga una persona y lo tiene todo el círculo.</p></details>
-      <details><summary>¿Mis datos de salud están seguros?</summary><p>Se guardan en servidores de la Unión Europea, cada persona solo ve lo que su papel permite y lo médico se abre con la huella. Puedes descargar o borrar tus datos cuando quieras.</p></details>
+      <details><summary>¿Mis datos de salud están seguros?</summary><p>Se guardan en servidores de la Unión Europea, cada persona solo ve lo que su papel permite y lo médico se abre con la huella (en el ordenador, con la contraseña). Puedes descargar o borrar tus datos cuando quieras.</p></details>
       <details><summary>¿Hace falta que la persona cuidada use el móvil?</summary><p>No. Si quiere y puede, tiene una pantalla muy sencilla con sus tomas, un «¿Cómo estás hoy?» y un botón para pedir ayuda. Si no, el círculo se organiza igual.</p></details>
-      <details><summary>¿En qué idiomas está Tutelia?</summary><p>Está en castellano, català, valencià, galego, euskara e inglés. Cada persona elige su idioma en el Perfil, y la app, los avisos del móvil y los correos le llegan en ese idioma. Lo que escribe cada persona no se traduce.</p></details>
+      <details><summary>¿En qué idiomas está Tutelia?</summary><p>Está en castellano, català, valencià, galego, euskara, English, français, Deutsch, română, português e italiano. Cada persona elige su idioma en el Perfil, y la app, los avisos del móvil y los correos le llegan en ese idioma. Lo que escribe cada persona no se traduce.</p></details>
     </section>
   </main>
 
