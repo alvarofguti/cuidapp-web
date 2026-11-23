@@ -92,7 +92,7 @@ section { margin: 3rem 0; }
 .rejilla .tarjeta { margin: 0; }
 /* Índice de Consejos: dos columnas en pantallas anchas, una en el móvil. */
 .articulo.consejos { max-width: 64rem; }
-.consejos .entrada, .consejos .aviso { max-width: 46rem; margin-left: 0; }
+.consejos .entrada, .consejos .aviso { max-width: none; margin-left: 0; }
 .consejos .rejilla { grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); margin: 1.5rem 0; }
 .tarjeta h3 { margin: 0.25rem 0 0.5rem; font-size: 1.2rem; }
 .tarjeta p { margin: 0.25rem 0; }
