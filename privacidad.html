@@ -12,7 +12,7 @@
   <main>
     <header class="marca"><a href="./">Tutelia</a></header>
     <h1>Política de privacidad</h1>
-    <p class="muted">Última actualización: 21 de noviembre de 2026.</p>
+    <p class="muted">Última actualización: 23 de noviembre de 2026.</p>
     <p class="aviso"><strong>Versión provisional</strong>, para la fase de pruebas. Está pendiente de revisión legal y puede cambiar antes de que la app esté disponible para todo el mundo.</p>
 
     <h2>Quién es responsable</h2>
@@ -31,7 +31,14 @@
       <li><strong>Del móvil</strong>: el identificador para enviarte avisos (token push) y el tipo de sistema (Android o iOS).</li>
       <li><strong>Del móvil de la persona cuidada</strong>, si la coordinación lo vincula: lo que responde a «¿Cómo estás hoy?» y, solo cuando pulsa el botón de pedir ayuda y si la coordinación lo permite, <strong>su ubicación</strong>, para que quien va sepa dónde está.</li>
     </ul>
-    <p>Fuera de eso, no usamos la ubicación, ni tus contactos, ni el micrófono. La huella, la cara o el PIN los comprueba el propio móvil: la app nunca los recibe. Leer en voz alta usa la voz del propio móvil: el texto no sale del teléfono.</p>
+    <p>Lo que la app usa del móvil, siempre solo cuando lo pides:</p>
+    <ul>
+      <li><strong>Ubicación</strong>: solo al pulsar el botón de pedir ayuda (en el móvil de la persona cuidada, si la coordinación lo permite, y en «Me cuido yo»), para que quien va sepa dónde estás. Se borra al cerrar el aviso.</li>
+      <li><strong>Contactos</strong>: con «Elegir de mis contactos», la app lee solo el contacto que eliges (nombre, teléfono y dirección) para rellenar el formulario. No lee la agenda entera ni la guarda.</li>
+      <li><strong>Cámara</strong>: para las fotos que decides compartir (documentos, tickets, chat, fotos para el círculo) y para leer en el propio móvil el código de barras o el código QR de una caja de medicamento, «¿Qué medicamento es?», «Leer un papel en voz alta» y el documento de identidad. Esas fotos de lectura no salen del móvil y se borran al terminar.</li>
+      <li><strong>Sensor de movimiento</strong> (detección de caídas, premium, solo Android y solo si se activa): el móvil analiza sus movimientos en el propio teléfono; los datos de movimiento no se envían ni se guardan. Solo si nota una posible caída y nadie contesta a «¿Estás bien?» en 30 segundos, envía el aviso al círculo. Guardamos un código propio de ese móvil (solo su huella cifrada) y los avisos de posible caída.</li>
+    </ul>
+    <p>No usamos el micrófono. La huella, la cara o el PIN los comprueba el propio móvil: la app nunca los recibe. Leer en voz alta usa la voz del propio móvil o del ordenador: el texto no sale de él.</p>
 
     <h2>Para qué y con qué base legal</h2>
     <ul>
@@ -55,13 +62,14 @@
       <li><strong>Supabase</strong>: base de datos, ficheros y acceso a la cuenta. Servidores en Frankfurt (Unión Europea).</li>
       <li><strong>Expo</strong> y <strong>Google Firebase Cloud Messaging</strong>: entrega de los avisos al móvil (el token y un texto genérico) y actualizaciones de la app.</li>
       <li><strong>Resend</strong>: envío de los correos con los códigos de acceso y de las sugerencias que nos escribes.</li>
+      <li><strong>Zoho Mail</strong> (centro de datos de la Unión Europea): el buzón hola@tutelia.app, donde recibimos y contestamos tus correos y sugerencias.</li>
       <li><strong>LabsMobile</strong> (España): solo si en «Me cuido yo» marcas avisar por SMS a un contacto que no usa la app, recibe su teléfono y el texto del aviso (tu nombre de pila; nunca datos de salud). El primer SMS le explica quién se lo envía.</li>
       <li><strong>Anthropic</strong>: genera el resumen en lenguaje claro de un prospecto. Solo recibe el texto oficial del prospecto, nunca datos de ninguna persona.</li>
       <li><strong>Google Play</strong> (y, cuando llegue, <strong>App Store</strong>): cobran la suscripción premium. Tutelia no ve ni guarda tu tarjeta ni tus datos de pago.</li>
       <li><strong>RevenueCat</strong>: comprueba con la tienda las compras del premium (renovaciones, cancelaciones, reembolsos). Recibe un identificador interno de tu cuenta, que no es tu correo ni tu nombre, y los datos de la compra; nunca datos de salud ni de tu círculo.</li>
-      <li><strong>Google ML Kit</strong> (en Android; en iPhone se usa el reconocimiento de Apple, sin envío de datos): lee en el propio móvil el número y la caducidad de la foto de un documento de identidad cuando pulsas «Leer con la cámara». La foto no sale del móvil y se borra al terminar; Google solo recibe datos técnicos de funcionamiento (modelo del móvil, versión de la app, rendimiento).</li>
+      <li><strong>Google ML Kit</strong> (en Android; en iPhone se usa el reconocimiento de Apple, sin envío de datos): lee en el propio móvil el texto y los códigos de las fotos de lectura: el número y la caducidad de un documento de identidad («Leer con la cámara»), el código de una caja de medicamento, «¿Qué medicamento es?» y «Leer un papel en voz alta». La foto no sale del móvil y se borra al terminar; Google solo recibe datos técnicos de funcionamiento (modelo del móvil, versión de la app, rendimiento).</li>
       <li><strong>CIMA (AEMPS)</strong>: catálogo oficial de medicamentos, consultado desde nuestro servidor sin datos de personas.</li>
-      <li><strong>Cloudflare</strong>: sirve la versión de Tutelia para el ordenador (círculos premium). Ve los datos técnicos de la conexión (dirección IP y navegador) para entregar la página; tus datos los guarda Supabase, no Cloudflare. En el ordenador la app no guarda nada al cerrar la pestaña y la sesión se cierra sola a los 15 minutos sin uso.</li>
+      <li><strong>Cloudflare</strong>: sirve la versión de Tutelia para el ordenador (círculos premium). Ve los datos técnicos de la conexión (dirección IP y navegador) para entregar la página; tus datos los guarda Supabase, no Cloudflare. En el ordenador la app no guarda nada al cerrar la pestaña, salvo la apariencia y el tamaño de la letra que elijas, y la sesión se cierra sola a los 15 minutos sin uso.</li>
       <li><strong>CartoCiudad (Instituto Geográfico Nacional)</strong>: sugerencias de direcciones mientras escribes una. Solo recibe el texto que se escribe en el campo de dirección, desde nuestro servidor (no tu móvil ni tu cuenta).</li>
     </ul>
     <p>Algunos de estos proveedores están en Estados Unidos; las transferencias se hacen con las garantías que exige el RGPD (cláusulas contractuales tipo o el Marco de Privacidad de Datos UE–EE. UU.).</p>
@@ -88,6 +96,8 @@
 
     <h2>En tu móvil</h2>
     <p>La sesión se guarda en el almacenamiento seguro del móvil. Para poder consultarlos sin conexión, la medicación y el calendario se guardan cifrados (AES-256). Lo médico no se guarda en el móvil.</p>
+    <p>Si pones el widget de Tutelia en la pantalla del móvil, guarda en el propio móvil (sin copia de seguridad) tus turnos y las horas de las tomas de hoy, sin el nombre del medicamento. Con el bloqueo con huella activado, solo dice «Abre Tutelia para verlo».</p>
+    <p>Si llevas tus turnos al calendario del móvil (Google Calendar o el del iPhone), Google o Apple guardan una copia de esos turnos, sin datos de salud. Puedes dejar de compartirlos cuando quieras.</p>
 
     <h2>Tus derechos</h2>
     <ul>
