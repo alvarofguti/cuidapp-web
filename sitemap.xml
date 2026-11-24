@@ -35,6 +35,33 @@
   <url><loc>https://tutelia.app/vacunas/navarra.html</loc><lastmod>2026-11-23</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tutelia.app/vacunas/pais-vasco.html</loc><lastmod>2026-11-23</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tutelia.app/verificar.html</loc><lastmod>2026-11-24</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://tutelia.app/manual/</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tutelia.app/manual/alertas.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/asociaciones.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/avisos.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/calendario.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/chat.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/circulos.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/contactos.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/diario.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/emergencias.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/familia.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/gastos.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/inicio.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/intercambio.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/me-cuido-yo.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/medicacion.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/novedades.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/ordenador.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/perfil.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/persona-cuidada.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/personas.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/premium.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/primeros-pasos.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/recados.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/resumen-semanal.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/salud.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tutelia.app/manual/servicios.html</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://tutelia.app/aprender/</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://tutelia.app/aprender/movilizar.html</loc><lastmod>2026-11-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tutelia.app/aprender/llagas.html</loc><lastmod>2026-11-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>

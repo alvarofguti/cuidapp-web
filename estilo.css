@@ -137,3 +137,8 @@ a.tarjeta.enlace:hover { border-color: var(--primary); }
 .calendario tr:last-child th, .calendario tr:last-child td { border-bottom: none; }
 .calendario .nota { display: block; color: var(--text-muted); font-size: 0.95rem; }
 .comunidades { columns: 2 14rem; padding-left: 1.25rem; }
+/* Manual (paso 58): capturas del móvil y navegación entre temas. */
+.captura { max-width: 17rem; margin: 1.5rem auto; text-align: center; }
+.captura img { width: 100%; height: auto; border: 1px solid var(--border-strong); border-radius: 1.25rem; }
+.captura figcaption { font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem; }
+.navegacion { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-strong); }
