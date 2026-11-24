@@ -33,6 +33,13 @@
   <url><loc>https://tutelia.app/vacunas/navarra.html</loc><lastmod>2026-11-23</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tutelia.app/vacunas/pais-vasco.html</loc><lastmod>2026-11-23</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tutelia.app/verificar.html</loc><lastmod>2026-11-24</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://tutelia.app/aprender/</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tutelia.app/aprender/movilizar.html</loc><lastmod>2026-11-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tutelia.app/aprender/llagas.html</loc><lastmod>2026-11-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tutelia.app/aprender/atragantamiento.html</loc><lastmod>2026-11-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tutelia.app/aprender/caidas.html</loc><lastmod>2026-11-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tutelia.app/aprender/higiene-en-la-cama.html</loc><lastmod>2026-11-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tutelia.app/aprender/medicacion.html</loc><lastmod>2026-11-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tutelia.app/cuidador/</loc><lastmod>2026-11-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://tutelia.app/dependencia/</loc><lastmod>2026-11-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://tutelia.app/dependencia/andalucia.html</loc><lastmod>2026-11-23</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
