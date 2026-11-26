@@ -54,6 +54,15 @@
         </div>
         <button type="button" class="secundario" id="volver-contrasena">Entrar con la contraseña</button>
       </form>
+
+      <!-- Si la cuenta tiene la verificación en dos pasos (paso 60), su código antes de borrar. -->
+      <form id="con-verificacion" hidden novalidate>
+        <p id="verificacion-titulo" tabindex="-1">Tu cuenta tiene la verificación en dos pasos. Escribe el código de 6 cifras de tu app de códigos (por ejemplo, Google Authenticator).</p>
+        <p class="muted">Si has perdido el móvil, escribe uno de tus códigos de respaldo.</p>
+        <label for="codigo-verificacion">Código de la app o de respaldo</label>
+        <input id="codigo-verificacion" type="text" autocomplete="one-time-code" maxlength="13" required>
+        <button type="submit">Continuar</button>
+      </form>
     </section>
 
     <section class="tarjeta" id="confirmar" hidden aria-labelledby="confirmar-titulo">

@@ -11,6 +11,8 @@
   const conContrasena = $('con-contrasena');
   const conCodigo = $('con-codigo');
   const confirmar = $('confirmar');
+  const conVerificacion = $('con-verificacion');
+  let cuentaPendiente = '';
   const mensaje = $('mensaje');
 
   function avisar(texto, tipo = 'error') {
@@ -37,6 +39,7 @@
   function mostrarConfirmacion(email) {
     conContrasena.hidden = true;
     conCodigo.hidden = true;
+    conVerificacion.hidden = true;
     $('cuenta').textContent = email;
     $('entiendo').checked = false;
     confirmar.hidden = false;
@@ -52,7 +55,7 @@
     ocupado(conContrasena.querySelector('button[type=submit]'), async () => {
       const { data, error } = await client.auth.signInWithPassword({ email, password });
       if (error) return avisar('El correo o la contraseña no son correctos.');
-      mostrarConfirmacion(data.user.email);
+      await despuesDeEntrar(data.user.email);
     });
   });
 
@@ -92,7 +95,46 @@
     ocupado(conCodigo.querySelector('button[type=submit]'), async () => {
       const { data, error } = await client.auth.verifyOtp({ email, token, type: 'recovery' });
       if (error || !data.user) return avisar('El código no es correcto o ha caducado. Pide uno nuevo.');
-      mostrarConfirmacion(data.user.email);
+      await despuesDeEntrar(data.user.email);
+    });
+  });
+
+  // Verificación en dos pasos (paso 60): si la cuenta la tiene, la base de datos no deja borrar
+  // nada hasta escribir el código de la app (o uno de respaldo, si se ha perdido el móvil).
+  async function despuesDeEntrar(email) {
+    const { data } = await client.auth.mfa.getAuthenticatorAssuranceLevel();
+    if (data && data.nextLevel === 'aal2' && data.currentLevel !== 'aal2') {
+      cuentaPendiente = email;
+      conContrasena.hidden = true;
+      conCodigo.hidden = true;
+      conVerificacion.hidden = false;
+      $('codigo-verificacion').value = '';
+      $('verificacion-titulo').focus();
+      return;
+    }
+    mostrarConfirmacion(email);
+  }
+
+  conVerificacion.addEventListener('submit', (e) => {
+    e.preventDefault();
+    limpiar();
+    const escrito = $('codigo-verificacion').value.trim();
+    if (!escrito) return avisar('Escribe el código.');
+    ocupado(conVerificacion.querySelector('button[type=submit]'), async () => {
+      if (/^\d{6}$/.test(escrito.replace(/\s/g, ''))) {
+        const { data: factores } = await client.auth.mfa.listFactors();
+        const factor = factores && factores.totp.find((f) => f.status === 'verified');
+        if (!factor) return avisar('No hemos podido comprobar el código. Inténtalo de nuevo.');
+        const { error } = await client.auth.mfa.challengeAndVerify({ factorId: factor.id, code: escrito.replace(/\s/g, '') });
+        if (error) return avisar('El código no es correcto. Escribe el que se ve ahora en la app (cambia cada 30 segundos).');
+      } else {
+        const { data, error } = await client.rpc('use_mfa_recovery_code', { p_code: escrito });
+        if (error) return avisar('No hemos podido conectar. Revisa tu conexión e inténtalo de nuevo.');
+        if (data && data.error === 'rate_limited') return avisar('Demasiados intentos. Espera una hora y vuelve a probar.');
+        if (!data || !data.ok) return avisar('Ese código de respaldo no es válido o ya se ha usado.');
+        await client.auth.refreshSession();
+      }
+      mostrarConfirmacion(cuentaPendiente);
     });
   });
 
@@ -100,6 +142,7 @@
     limpiar();
     await client.auth.signOut();
     confirmar.hidden = true;
+    conVerificacion.hidden = true;
     conContrasena.hidden = false;
     $('contrasena').value = '';
     $('correo').focus();
