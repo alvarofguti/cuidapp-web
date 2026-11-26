@@ -12,7 +12,7 @@
   <main>
     <header class="marca"><a href="./">Tutelia</a></header>
     <h1>Política de privacidad</h1>
-    <p class="muted">Última actualización: 23 de noviembre de 2026.</p>
+    <p class="muted">Última actualización: 26 de noviembre de 2026.</p>
     <p class="aviso"><strong>Versión provisional</strong>, para la fase de pruebas. Está pendiente de revisión legal y puede cambiar antes de que la app esté disponible para todo el mundo.</p>
 
     <h2>Quién es responsable</h2>
@@ -69,7 +69,7 @@
       <li><strong>RevenueCat</strong>: comprueba con la tienda las compras del premium (renovaciones, cancelaciones, reembolsos). Recibe un identificador interno de tu cuenta, que no es tu correo ni tu nombre, y los datos de la compra; nunca datos de salud ni de tu círculo.</li>
       <li><strong>Google ML Kit</strong> (en Android; en iPhone se usa el reconocimiento de Apple, sin envío de datos): lee en el propio móvil el texto y los códigos de las fotos de lectura: el número y la caducidad de un documento de identidad («Leer con la cámara»), el código de una caja de medicamento, «¿Qué medicamento es?» y «Leer un papel en voz alta». La foto no sale del móvil y se borra al terminar; Google solo recibe datos técnicos de funcionamiento (modelo del móvil, versión de la app, rendimiento).</li>
       <li><strong>CIMA (AEMPS)</strong>: catálogo oficial de medicamentos, consultado desde nuestro servidor sin datos de personas.</li>
-      <li><strong>Cloudflare</strong>: sirve la versión de Tutelia para el ordenador (círculos premium). Ve los datos técnicos de la conexión (dirección IP y navegador) para entregar la página; tus datos los guarda Supabase, no Cloudflare. En el ordenador la app no guarda nada al cerrar la pestaña, salvo la apariencia y el tamaño de la letra que elijas, y la sesión se cierra sola a los 15 minutos sin uso.</li>
+      <li><strong>Cloudflare</strong>: sirve la versión de Tutelia para el ordenador (círculos premium). Ve los datos técnicos de la conexión (dirección IP y navegador) para entregar la página; tus datos los guarda Supabase. Además, Cloudflare guarda en la Unión Europea la copia de seguridad de cada noche, <strong>cifrada</strong> con una clave que solo tiene JUNOSoft: Cloudflare no puede leerla. En el ordenador la app no guarda nada al cerrar la pestaña, salvo la apariencia y el tamaño de la letra que elijas, y la sesión se cierra sola a los 15 minutos sin uso.</li>
       <li><strong>CartoCiudad (Instituto Geográfico Nacional)</strong>: sugerencias de direcciones mientras escribes una. Solo recibe el texto que se escribe en el campo de dirección, desde nuestro servidor (no tu móvil ni tu cuenta).</li>
     </ul>
     <p>Algunos de estos proveedores están en Estados Unidos; las transferencias se hacen con las garantías que exige el RGPD (cláusulas contractuales tipo o el Marco de Privacidad de Datos UE–EE. UU.).</p>
@@ -89,6 +89,8 @@
       <li>Mensajes del chat y avisos de la bandeja: 30 días.</li>
       <li>La ubicación de un aviso de emergencia: se borra al cerrarlo y, como mucho, a las 24 horas.</li>
       <li>Novedades del círculo: 90 días.</li>
+      <li>El registro de quién ha consultado lo clínico (citas, motivo de un ingreso, documentos, expediente): 2 años.</li>
+      <li>La copia de seguridad, cifrada y guardada en la Unión Europea: lo borrado sigue en ella hasta que caduca la copia (30 días las diarias y unos 13 meses las mensuales).</li>
       <li>Anuncios del intercambio: caducan a los 60 días y se borran 90 días después de caducar o cerrarse.</li>
       <li>Si la coordinación pide borrar un círculo, se borra todo a los 30 días (hasta entonces se puede cancelar).</li>
       <li>Si borras tu cuenta, se borra al momento. Lo que escribiste en círculos que siguen activos (por ejemplo, una toma anotada) se queda sin autor.</li>
