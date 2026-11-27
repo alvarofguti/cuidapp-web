@@ -73,6 +73,11 @@ footer { margin-top: 3rem; font-size: 1rem; }
 .cabecera .marca img { border-radius: 0.6rem; }
 .cabecera nav { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
 .cabecera nav a:not(.boton) { font-weight: 600; text-decoration: none; min-height: 3rem; display: inline-flex; align-items: center; }
+/* Paso 62: la sección en la que estás, subrayada (no solo por color). */
+.cabecera nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 0.3em; }
+/* Enlaces de interés (página «Guías», paso 62). */
+.enlaces { list-style: none; padding: 0; margin: 0.5rem 0 1.5rem; }
+.enlaces li { margin: 0.6rem 0; line-height: 1.5; }
 body:has(.portada) main { max-width: 64rem; }
 section { margin: 3rem 0; }
 .portada { text-align: center; margin-top: 1.5rem; }
@@ -94,7 +99,10 @@ section { margin: 3rem 0; }
 .articulo.consejos { max-width: 64rem; }
 .consejos .entrada, .consejos .aviso { max-width: none; margin-left: 0; }
 .consejos .rejilla { grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); margin: 1.5rem 0; }
-.tarjeta h3 { margin: 0.25rem 0 0.5rem; font-size: 1.2rem; }
+.tarjeta h3, .tarjeta h4 { margin: 0.25rem 0 0.5rem; font-size: 1.2rem; }
+/* Portada (paso 62): subtítulo de cada bloque de funciones. */
+h3.grupo { margin: 2rem 0 0.75rem; font-size: 1.4rem; }
+h3.grupo:first-of-type { margin-top: 1rem; }
 .tarjeta p { margin: 0.25rem 0; }
 .icono { font-size: 2rem; margin: 0; }
 .lista-check { list-style: none; padding: 0; }
